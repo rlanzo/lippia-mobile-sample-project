@@ -25,9 +25,13 @@ public class LoginSteps extends PageSteps {
         MobileActionManager.click(LoginConstants.SIGN_UP_BUTTON_LOCATOR);
     }
 
-    @When("The user logs in the application with: (.*), (.*)")
+    @When("el usuario ingresa los datos para acceder: mail(.*) y password (.*)")
     public void doLoginProcess(String email, String password) {
         LoginService.doLogin(email, password);
     }
 
+    @Then ("el usuario se encuentra logueado y ve el titulo (.*)")
+        public void usuarioLogueado(String titulo){
+        LoginService.usuarioLogueado(titulo);
+    }
 }
