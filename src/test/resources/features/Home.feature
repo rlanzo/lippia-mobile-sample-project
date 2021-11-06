@@ -7,7 +7,7 @@ Feature: El usuario se encuentra en el Home
     And el usuario hace click en seleccionar Proyect
     When el usuario hace click en deshabilitaHabilita Billable
     Then el usuario deshabilita Habilita y vuelve al menu del proyecto, visualiza nuevamente su nombre <texto>
-    @romis
+
     Examples:
       | email                   | password   | texto   |
       | romina.dilanzo@gire.com | Romina1234 | Romina1 |
